@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Moviedetails from "./moviedetails";
 import Movies from "./movies";
 
@@ -9,9 +9,8 @@ function App() {
     // <div>
       <Routes>
         <Route path="/" element={<Movies />} />
-        {/* <Route path="/moviedetails/:id" element={<Moviedetails />}/> */}
+        <Route path="/moviedetails/:id" element={<Moviedetails />}/>
       </Routes>
-    // </div>
   );
 }
 
